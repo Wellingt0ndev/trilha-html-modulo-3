@@ -5,6 +5,11 @@ body, html {
 }
 ul { list-style: none; padding-left: 5px; }
 a { color:blue; text-decoration: none;}
+main{
+    border-right: solid 1px #cdcdcd;
+    padding-right:46px;
+    padding-left: 30px;
+}
 .bar {
     background-color: #f9f9fb;
     padding:15px;
@@ -22,17 +27,42 @@ a { color:blue; text-decoration: none;}
     padding-left: 1rem;
     padding-right: 1rem;
 }
-.footer {
+
+footer {
     min-height: 100px;
     border-top: solid 1px #cdcdcd;
 }
 .anchors {
-    border-left: solid 1px #cdcdcd;
+    
+    position: fixed;
+    right: 0;  
+    top: 50%; /* Ajuste a altura conforme necessário */
+    transform: translateY(-36.55%);   
+    height: 100%;   
     padding-left: 15px;
 }
 .sidebar {
-    border-right: solid 1px #cdcdcd;
+    border-right: solid 1px #cdcdcd;    
 }
 figure {
-    text-align: center;
+    display: table;
+    text-align: center;    
+    border: 2px solid #aeaeae;   
+    background-color: #f8f9fa;    
+}
+
+figcaption{
+    display: block;
+    unicode-bidi: isolate;
+    font-size: 10px;  
+}
+
+.roteiro {
+    float: left;
+    width: 155px;
+    margin: 0 10px 10px 0;
+}
+
+.autor{
+    width:100%;     
 }
